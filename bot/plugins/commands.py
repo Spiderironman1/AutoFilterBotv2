@@ -30,7 +30,7 @@ async def start(bot, update):
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = caption,
+                caption = f"{file_name} <br> \n @saisidheswar 
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
@@ -38,7 +38,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '🔰Join Our Group🔰', url="https://t.me/Film_Freakers"
+                                    '🔰Join Our Group 🔰', url="https://t.me/Film_crux"
                                 )
                         ]
                     ]
@@ -50,14 +50,14 @@ async def start(bot, update):
             await bot.send_video(
                 chat_id=update.chat.id,
                 video = file_id,
-                caption = caption,
+                caption = v"{video_name} <br> \n @saisidheswar 
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    '🔰Join Our Group🔰', url="https://t.me/Film_Freakers"
+                                    '🔰Join Our Group 🔰', url="https://t.me/Film_crux"
                                 )
                         ]
                     ]
@@ -76,7 +76,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '🔰Join Our Group🔰', url="https://t.me/Film_Freakers"
+                                    '🔰Join Our Group🔰', url="https://t.me/Film_crux"
                                 )
                         ]
                     ]
@@ -89,8 +89,8 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('🔰 Channel 🔰', url='https://t.me/Films_4u'),
-        InlineKeyboardButton('⚜️Join Our Group⚜️', url ='https://t.me/Film_Freakers')
+        InlineKeyboardButton('😻 Channel😻 ', url='https://t.me/saisidheswar'),
+        InlineKeyboardButton('😇Join Our Group😇', url ='https://t.me/Film_crux')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
